@@ -1,11 +1,15 @@
 import './App.css';
 import './blog/Blog.css'
 import Blog from './Components/Blog';
+import Mobile from './Components/Mobile/Mobile';
 
 function App() {
   const bg = {fontSize:"40px"}
   return (
     <div className="App">
+
+      <Mobile></Mobile>
+
       <Blog inputArea="Abu Bakkar Siddik" heading="Teh beda" auhtor="Raihan"></Blog>
      <article className='Blog'>
       <h2>Hello This is Practies Projects</h2>
