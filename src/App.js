@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import './blog/Blog.css'
+import Blog from './Components/Blog';
 
 function App() {
+  const bg = {fontSize:"40px"}
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Blog inputArea="Abu Bakkar Siddik" heading="Teh beda" auhtor="Raihan"></Blog>
+     <article className='Blog'>
+      <h2>Hello This is Practies Projects</h2>
+      <p style={bg}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nihil nam iure non explicabo labore molestias molestiae porro quidem magnam ipsam accusantium consectetur ut, quo expedita! Repudiandae architecto aperiam perspiciatis?</p>
+     </article>
     </div>
   );
 }
