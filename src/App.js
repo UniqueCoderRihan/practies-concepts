@@ -2,11 +2,15 @@ import './App.css';
 import './blog/Blog.css'
 import Blog from './Components/Blog';
 import Mobile from './Components/Mobile/Mobile';
+import Todos from  './Components/Todos/Todos'
 
 function App() {
   const bg = {fontSize:"40px"}
   return (
     <div className="App">
+
+    <Todos></Todos>
+
 
       <Mobile></Mobile>
 

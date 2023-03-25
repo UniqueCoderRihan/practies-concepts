@@ -1,27 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Mobile = () => {
+    const [Battery, setItems] = useState(100) 
+    function BatteryDown(){
+        const newBattery = Battery-10;
+        setItems(newBattery);
+    }
     return (
+
         <div>
-            <h2> <span id='count'>100</span></h2>
+            <h2> <span id='count'>{Battery}</span></h2>
             
             <button id='btn' onClick={BatteryDown}>Battery Down</button>
         </div>
        
     );
 };
-function BatteryDown(){
-    let valueElement=document.getElementById('count');
-    let value = valueElement.innerText;
-    let current = parseInt(value)
-    if(current === 0){
-        
-    }
-    else{
-        current= value-10;
-        console.log(current);
-        valueElement.innerText = current;
-    }
-    
-}
 export default Mobile;
